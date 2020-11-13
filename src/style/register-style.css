@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.bg {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(45deg, rgb(27, 105, 248) 10%, rgb(243, 13, 212));
+
+    z-index: -1;
+}
+
+form {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 230px;
+
+    background-color: rgba(255, 255, 255, .5);
+}
+
+form h1 {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    color: rgb(1, 87, 247);
+}
+
+form input {
+    display: block;
+    outline: none;
+
+    margin: 8px auto;
+    width: 80%;
+    padding: 7px;
+
+    border: 1px solid rgba(255, 255, 255, .5);
+
+    transition: .4s;
+}
+
+form input:focus {
+    width: 85%;
+    border-radius: 8px;
+
+    border: 1px solid  rgb(1, 87, 247);
+}
+
+form select {
+    display: block;
+    float: right;
+    
+    margin: 8px auto;
+    margin-right: 31px;
+    padding: 4px;
+    
+    color: rgb(1, 87, 247);
+}
+
+form select option[value="female"] {
+    color: rgb(224, 6, 90);
+}
+
+form button {
+    display: block;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+
+    margin-left: 31px;
+    padding: 7px;
+
+    width: 30%;
+
+    background-color: rgb(1, 87, 247);
+    color: #fff;
+
+    transition: .4s;
+}
+
+form button:disabled {
+    cursor: not-allowed;
+
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+}
+
+form button:hover {
+    border-radius: 8px;
+
+    color: #000;
+    background-color: #fff;
+}
